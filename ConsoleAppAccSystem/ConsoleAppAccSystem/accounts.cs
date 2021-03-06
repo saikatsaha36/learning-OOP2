@@ -77,7 +77,40 @@ namespace ConsoleAppAccSystem
                 Console.Write("Balance Of Ammount : ");
                 deposit = int.Parse(Console.ReadLine());
             }
-           
+            public void modify_account()
+            {
+                modifyAccount();
+            }
+            public void accountdep()
+            {
+                int x;
+                Console.Write("Enter the ammount You want Deposit:");
+                x = int.Parse(Console.ReadLine());
+                deposit += x;
+            }
+            public void accountdraw()
+            {
+                int x;
+                Console.Write("Enter the ammount You want withdraw:");
+                x = int.Parse(Console.ReadLine());
+                deposit -= x;
+            }
+            public void account_report()
+            {
+                Console.Write("AccNo ::{0} \nName::{1} \nType::{2} \nDeposit:{3}\n", acno, name, userType, deposit);
+            }
+            public string retacno()
+            {
+                return acno;
+            }
+            public int retdeposit()
+            {
+                return deposit;
+            }
+            public char rettype()
+            {
+                return userType;
+            }
 
 
 

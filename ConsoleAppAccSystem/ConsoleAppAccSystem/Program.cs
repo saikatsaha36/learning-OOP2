@@ -27,6 +27,48 @@ namespace ConsoleAppAccSystem
                 Console.Write("\n\tSelect Your Option (1-7)");
                 n = int.Parse(Console.ReadLine());
                 Console.Clear();
+                switch (n)
+                {
+                    case 1:
+                        {
+                            Console.Clear();
+                            bank.createAcount();
+                            break;
+                        }
+                    case 2:
+                        {
+                            Console.Clear();
+                            bank.accountdep();
+                            break;
+                        }
+                    case 3:
+                        {
+                            Console.Clear();
+                            bank.accountdraw();
+                            break;
+                        }
+                    case 4:
+                        {
+                            Console.Clear();
+                            bank.account_report();
+                            break;
+                        }
+                    case 5:
+                        {
+                            Console.Clear();
+                            bank.show_Account();
+                            break;
+                        }
+                    case 6:
+                        {
+                            Console.Clear();
+                            Console.Write("\n\t Enter The Account No : ");
+                            num = int.Parse(Console.ReadLine());
+                            bank.modifyAccount();
+                            break;
+                        }
+                }
+            } while (n != 7);
                 
         }
     }
