@@ -1,0 +1,6 @@
+C:\Users\Joy\Desktop\C#\ConsoleAppAccSystem\ConsoleAppAccSystem\bin\Debug\ConsoleAppAccSystem.exe.config
+C:\Users\Joy\Desktop\C#\ConsoleAppAccSystem\ConsoleAppAccSystem\bin\Debug\ConsoleAppAccSystem.exe
+C:\Users\Joy\Desktop\C#\ConsoleAppAccSystem\ConsoleAppAccSystem\bin\Debug\ConsoleAppAccSystem.pdb
+C:\Users\Joy\Desktop\C#\ConsoleAppAccSystem\ConsoleAppAccSystem\obj\Debug\ConsoleAppAccSystem.csprojResolveAssemblyReference.cache
+C:\Users\Joy\Desktop\C#\ConsoleAppAccSystem\ConsoleAppAccSystem\obj\Debug\ConsoleAppAccSystem.exe
+C:\Users\Joy\Desktop\C#\ConsoleAppAccSystem\ConsoleAppAccSystem\obj\Debug\ConsoleAppAccSystem.pdb
