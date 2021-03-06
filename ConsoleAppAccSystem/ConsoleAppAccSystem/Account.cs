@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppAccSystem
 {
-    class accounts
-    {
+    class Account
+    {     
         //private int acno;
 
         //public int useracno
@@ -17,17 +17,25 @@ namespace ConsoleAppAccSystem
         //}
         private static int serialNo = 0;
         private string acno;
+        //private string address;
 
         internal virtual string ID
         {
             get { return this.acno; }
             set { this.acno = "P" + value; }
         }
+     
+        //internal string Address
+        //{
+        //    get { return this.address; }
+        //    set { this.address = value; }
+        //}
 
            
             protected String name;
             internal int deposit;
             protected internal Char userType;
+            internal string address;
 
             private void create_account()
             {
@@ -37,6 +45,9 @@ namespace ConsoleAppAccSystem
                 //useracno = int.Parse(Console.ReadLine());
                 Console.Write("Enter The Name of The account Holder : ");
                 name = Console.ReadLine();
+                Console.Write("Enter The account Holder Address : ");
+                address = Console.ReadLine();
+
                 Console.Write("\nEnter Type of The account (C/S) : ");
                 userType = char.Parse(Console.ReadLine());
                 Console.Write("Enter the ammount(500 for savings and 1000 for current) : ");
@@ -48,7 +59,7 @@ namespace ConsoleAppAccSystem
             {
                 create_account();
             }
-           
+
 
             public void show_Account()
             {
@@ -56,6 +67,7 @@ namespace ConsoleAppAccSystem
                 Console.WriteLine("ID: {0}", this.acno);
                 //Console.Write("\nAccount No :{0}", acno)
                 Console.Write("\nAccount Holder Name : {0}", name);
+                Console.Write("\nAccount Holder Address :{0}", address);
                 Console.Write("\nType of Account : {0}", userType);
                 Console.Write("\n Balance Ammount : {0}", deposit);
             }

@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppAccSystem
 {
-    class Program : accounts
+    class Program : Account
     {
         static void Main(string[] args)
         {
             int num, n;
-            accounts bank = new accounts();
+            Account bank = new Account();
+
 
             do
             {
@@ -27,6 +28,7 @@ namespace ConsoleAppAccSystem
                 Console.Write("\n\tSelect Your Option (1-7)");
                 n = int.Parse(Console.ReadLine());
                 Console.Clear();
+
                 switch (n)
                 {
                     case 1:
